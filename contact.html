@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us — Fauzan International</title>
+<link rel="icon" href="/logo.png" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Outfit:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="topbar"><div class="container"><div class="topbar-info"><span><i class="fa-solid fa-phone"></i> +91 9426312592</span><span><i class="fa-solid fa-envelope"></i> fauzaninternational@gmail.com</span></div><div class="topbar-flag"><span class="tri s"></span><span class="tri w"></span><span class="tri g"></span><span style="margin-left:8px">EXPORTING FROM INDIA</span></div></div></div>
+
+<header class="header"><nav class="nav container"><a class="brand" href="index.html"><img src="logo.png" alt="Fauzan"/><span class="brand-text"><strong>FAUZAN</strong><small>INTERNATIONAL</small></span></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="products.html">Products</a></li><li><a href="services.html">Services</a></li><li><a href="quality.html">Quality</a></li><li><a href="certifications.html">Certifications</a></li><li><a href="markets.html">Markets</a></li><li><a href="contact.html">Contact</a></li></ul><div class="nav-cta"><a class="cart-btn" href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" data-cart-count>0</span></a><a href="contact.html" class="btn btn-primary">Get Quote</a><button class="hamburger"><i class="fa-solid fa-bars"></i></button></div></nav></header>
+
+<section class="page-header">
+  <div class="container">
+    <p class="breadcrumbs"><a href="index.html">Home</a><span>/</span>Contact</p>
+    <span class="eyebrow">Get In Touch</span>
+    <h1>Let's build a <span class="italic-accent">successful business</span> together</h1>
+    <p>Send us your requirement — product specifications, pricing, samples, packaging or long-term supply agreements. We respond within 24 hours.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <h3 style="margin-bottom:24px">Reach us directly</h3>
+        <div class="contact-cards">
+          <a class="contact-card" href="tel:+919426312592" data-testid="contact-phone">
+            <span class="ico"><i class="fa-solid fa-phone"></i></span>
+            <div><strong>Phone / WhatsApp</strong><span>+91 9426312592</span></div>
+          </a>
+          <a class="contact-card" href="mailto:fauzaninternational@gmail.com" data-testid="contact-email">
+            <span class="ico"><i class="fa-solid fa-envelope"></i></span>
+            <div><strong>Email</strong><span>fauzaninternational@gmail.com</span></div>
+          </a>
+          <div class="contact-card" data-testid="contact-address">
+            <span class="ico"><i class="fa-solid fa-location-dot"></i></span>
+            <div><strong>Office Address</strong><p>2100-B, 1st Floor, Moto Kumbharvado, Sarkivad, Shahpur, Ahmedabad, Gujarat – 380001, India</p></div>
+          </div>
+          <a class="contact-card" href="https://wa.me/919426312592" target="_blank" data-testid="contact-whatsapp">
+            <span class="ico" style="background:#dcf5d3;color:var(--green-dark)"><i class="fa-brands fa-whatsapp"></i></span>
+            <div><strong>Chat on WhatsApp</strong><span>Fastest response — usually within minutes</span></div>
+          </a>
+        </div>
+        <div style="margin-top:30px;padding:20px;background:var(--cream);border-radius:6px">
+          <strong style="display:block;color:var(--navy);margin-bottom:8px"><i class="fa-solid fa-clock" style="color:var(--saffron-dark)"></i> Business Hours</strong>
+          <span style="color:var(--muted);font-size:14px">Mon – Sat: 10:00 AM – 7:00 PM IST<br/>Sunday: Closed (WhatsApp available for urgent inquiries)</span>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <h3>Send us your requirement</h3>
+        <form id="inquiry-form" onsubmit="return handleContactForm(event)" data-testid="inquiry-form" data-handoff="whatsapp">
+          <div class="form-grid">
+            <div class="field"><label>Full Name *</label><input type="text" name="name" required data-testid="form-name" /></div>
+            <div class="field"><label>Email *</label><input type="email" name="email" required data-testid="form-email" /></div>
+            <div class="field"><label>Phone (with code)</label><input type="text" name="phone" placeholder="+971 ..." data-testid="form-phone" /></div>
+            <div class="field"><label>Country</label><input type="text" name="country" placeholder="UAE / Saudi Arabia / ..." data-testid="form-country" /></div>
+            <div class="field full"><label>Product Interested</label><input type="text" name="product" id="product" placeholder="e.g. 1121 Steam Basmati Rice" data-testid="form-product" /></div>
+            <div class="field full"><label>Quantity Required</label><input type="text" name="quantity" placeholder="e.g. 1 x 20ft container / 25 MT" data-testid="form-quantity" /></div>
+            <div class="field full"><label>Message *</label><textarea name="message" required placeholder="Specifications, packaging needs, target price, delivery terms..." data-testid="form-message"></textarea></div>
+          </div>
+          <div style="display:flex;gap:10px;margin-top:24px;flex-wrap:wrap">
+            <button type="submit" class="btn btn-green" onclick="document.getElementById('inquiry-form').dataset.handoff='whatsapp'" data-testid="submit-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+            </button>
+            <button type="submit" class="btn btn-dark" onclick="document.getElementById('inquiry-form').dataset.handoff='email'" data-testid="submit-email">
+              <i class="fa-solid fa-envelope"></i> Send via Email
+            </button>
+          </div>
+          <p style="margin-top:14px;font-size:12.5px;color:var(--muted)">
+            <i class="fa-solid fa-lock"></i> Your details open in your messenger / email app — we don't store anything on our servers.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0;background:#fff" data-testid="map-section">
+  <iframe
+    src="https://www.google.com/maps?q=Shahpur,Ahmedabad,Gujarat,India&output=embed"
+    width="100%" height="380" style="border:0;display:block" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade" title="Fauzan International office location"></iframe>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html"><img src="logo.png" alt="Fauzan"/><span class="brand-text"><strong style="color:#fff">FAUZAN</strong><small style="color:var(--saffron)">INTERNATIONAL</small></span></a><p class="footer-about">Premium Indian agricultural commodities exported worldwide with pride.</p></div><div><h5>Explore</h5><ul><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="services.html">Services</a></li><li><a href="quality.html">Quality</a></li><li><a href="markets.html">Markets</a></li></ul></div><div><h5>Products</h5><ul><li><a href="products.html#basmati">Basmati Rice</a></li><li><a href="products.html#non-basmati">Non-Basmati Rice</a></li><li><a href="products.html#vegetables">Fresh Vegetables</a></li><li><a href="products.html#grains">Grains</a></li></ul></div><div><h5>Contact</h5><ul class="footer-contact"><li><i class="fa-solid fa-location-dot"></i><span>2100-B, 1st Floor, Moto Kumbharvado, Sarkivad, Shahpur, Ahmedabad – 380001, India</span></li><li><i class="fa-solid fa-phone"></i><a href="tel:+919426312592">+91 9426312592</a></li><li><i class="fa-solid fa-envelope"></i><a href="mailto:fauzaninternational@gmail.com">fauzaninternational@gmail.com</a></li></ul></div></div><div class="footer-bottom"><span>© 2025 Fauzan International. All rights reserved.</span><span>From India to the World, with Pride.</span></div></div></footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
